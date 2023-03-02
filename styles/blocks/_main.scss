@@ -58,6 +58,7 @@ main{
         padding-top: 60px;
         width: 100%;
         display: flex;
+        flex-direction: column;
         row-gap: 40px;
         padding-bottom: 30px;
 
@@ -68,18 +69,18 @@ main{
             justify-content: center;
             row-gap: 30px;
             text-align: center;
-            padding-left: 5%;
-            padding-right: 5%;
             .info__btn{
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
                 row-gap: 20px;
                 margin-bottom: 4rem;
+
                 .info__btn--meet{
                     height: 60px;
                     border: none;
                     background-color: #541554;
+                    width: 90%;
+                    align-self: center;                    ;
                     p{
                         color:white;
                         font-size: 14px;
@@ -90,6 +91,8 @@ main{
                     height: 60px;
                     color:#541554;
                     border: 1px solid #541554;
+                    width: 90%;
+                    align-self: center; 
                     p{
                         color: #541554;
                         font-size: 14px;
@@ -121,6 +124,63 @@ main{
                 }
             }
 
+        }
+
+        .video{
+
+            .video__vid{
+                display: flex;
+                border-top-right-radius: 500px;
+                border-bottom-right-radius: 500px;
+                width: 97%;
+                height: 189.14px;
+                overflow: hidden;
+                margin-bottom: 30px;
+            }
+
+            .video__text{
+                display: flex;
+                flex-direction: column;
+                padding: 2em;
+                
+                i{
+                    font-family: Slack-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+                    font-weight: 300;
+                    line-height: 1.417;
+                    letter-spacing: -.3px;
+                    margin-top: 0;
+                    font-size: 1.25rem;
+                    margin-bottom: 1rem;
+                    font-style: italic;
+                }
+                b{
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+                p{
+                    font-size: 16px;
+                }
+                a{
+                    text-decoration: none;
+                    color: #1264A3;
+                }
+                
+            }
+
+        }
+        .footnotes{
+            display: flex;
+            justify-content: center;
+            .footnotes__p{
+                width: 90%;
+                p{
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 18px;
+                    margin-bottom: 1rem;
+                    color: #696969
+                }
+            }
         }
 
     }
