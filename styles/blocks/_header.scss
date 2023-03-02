@@ -1,0 +1,91 @@
+header{
+    font-family: Helvetica;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #541554;
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        padding: 0 2rem;
+        .nav__logo{
+            display: flex;
+            align-items: center;
+            height: 100%;
+            #logo-slack{
+                width: 100px;
+                height: 29px;
+            } 
+        }
+        .nav__burguer{   
+            display: flex;
+            align-items: center;
+            height: 100%;
+            #img-burguer{
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+    .head{
+ 
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1{
+                width: 90%;
+                text-align: center;
+                font-weight: 700;
+                font-size: 38px;
+            }
+            p{
+                width: 90%;
+                text-align: center;
+                font-weight: 500;
+                line-height: 1.444;
+                letter-spacing: -.2px;
+            }
+        
+        .head__btn--email{
+            height: 57px;
+            width: 90%;
+        }
+        .head__btn--google{
+            background-color: #007aff;
+            height: 57px;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p{
+                padding-right: 20%;
+            }
+        }
+        .head__vid{
+            max-width: 100px;
+            max-height: 100px;
+        }
+
+        #head--video{
+            justify-items: center;
+            object-fit:contain;
+            max-width: 180vw;
+            overflow-clip-margin: content-box;
+            overflow: clip;
+        }
+        
+        #logo-google{
+            height: 49px;
+            width: 49px;
+        }
+    }
+    
+}
+.text--yellow{
+    color: #ecb22e;
+}
