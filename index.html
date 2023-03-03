@@ -24,21 +24,25 @@
           Un buen trabajo en equipo comienza con una
           <span class="text--yellow">sede digital</span>
         </h1>
-        <p>
+        <p id="p--cabecera">
           Reunir a todos tus compañeros, herramientas y comunicación en un mismo
           lugar te permitirá trabajar de manera más rápida y eficiente que
           nunca.
         </p>
-        <button class="head__btn--email">REGISTRARSE CON CORREO</button>
-        <button class="head__btn--google">
-          <img src="./assets/header/logo-google.png" alt="" id="logo-google" />
-          <p>REGISTARSE CON GOOGLE</p>
-        </button>
+        <div class="head__btn">
+          <button class="head__btn--email">REGISTRARSE CON CORREO</button>
+          <button class="head__btn--google">
+            <img src="./assets/header/logo-google.png" alt="" id="logo-google" />
+            <p>REGISTARSE CON GOOGLE</p>
+          </button>
+        </div>
+
+      </div> 
+      
+      <div class="head__vid">
+        <img src="./assets/header/cabeceraanimacion.gif" id="head--video"/>
       </div>
-      <!--    <div class="head__vid">
-      <video src="https://a.slack-edge.com/9436a9f/marketing/img/homepage/e2e-prospects/animations/webm/hero-product-ui.es-ES.webm" id="head--video">
-        </video>
-      </div> -->
+
     </header>
     <main>
       <div class="main--sup">
@@ -126,10 +130,10 @@
             las empresas más importantes del mundo.
           </p>
           <div class="info__btn">
-            <button class="info__btn--meet">
+            <button class="btn--purple">
               <a href=""><p>CONOCE SLACK PARA EMPRESAS</p></a>
             </button>
-            <button class="info__btn--talk">
+            <button class="btn--white">
               <a href=""><p>HABLAR CON EL EQUIPO DE VENTAS</p></a>
             </button>
           </div>
@@ -163,28 +167,158 @@
             ></iframe>
           </div>
           <div class="video__text">
-            <i> “Hemos podido crear una amplia red virtual de empleados que se
+            <i>
+              “Hemos podido crear una amplia red virtual de empleados que se
               pueden comunicar como si estuvieran juntos. Hubo bastantes
-              problemas sobre dónde trabajábamos, pero no sobre el cómo”.</i>
+              problemas sobre dónde trabajábamos, pero no sobre el cómo”.</i
+            >
             <p><b>Mark Smith</b></p>
             <p>Responsable técnico sénior de Productos, T-Mobile</p>
-            <a href="">Ver más casos de clientes  ➜</a>
-            
-            <!--FALTA INTRODUCIR LA FLECHA  -->
+            <a href="">Ver más casos de clientes ➜</a>
 
+            <!--FALTA INTRODUCIR LA FLECHA  -->
           </div>
         </section>
         <section class="footnotes">
-            <div class="footnotes__p">
+          <div class="footnotes__p">
             <p>
               * Promedio ponderado. Basado en una encuesta de 2707 respuestas de
               usuarios semanales de Slack en Estados Unidos, Reino Unido,
               Australia y Canadá, con un margen de error de ± 2 % al 95 % CI
               (diciembre de 2021).
             </p>
-          </div></section>
+          </div>
+        </section>
+        <section class="explore">
+          <h4 class="explore__title" id="prueba">
+            Explora con más profundidad una nueva forma de trabajar
+          </h4>
+          <!--<div class="explore__title">
+              <h4>Explora con más profundidad una nueva forma de trabajar</h4>
+          </div>-->
+
+          <!--    MODIFICAR ESTE CONTENEDOR COMO UN ANCHOR COMPLETO   -->
+          <div class="explore__slider">
+            <a href="">
+              <div class="explore__slider--img">
+                <img src="./assets/body/img-promo-01.jpg" alt="" />
+                <p>Funciones</p>
+                <h4>Echa un vistazo a todo lo que puede hacer la plataforma</h4>
+              </div>
+              <div class="explore__slider--img__link">
+                <p class="blue">EXAMINA LAS FUNCIONES</p>
+                <p clsas="blue">➜</p>
+              </div>
+            </a>
+          </div>
+          <div class="explore__dots">
+            <ul class="explore__dots--list">
+              <li><div class="dot--selected"></div></li>
+              <li><div class="dot"></div></li>
+              <li><div class="dot"></div></li>
+              <li><div class="dot"></div></li>
+            </ul>
+          </div>
+        </section>
+        <section class="welcome">
+          <h2 class="text--white">
+            Te damos la bienvenida a tu nueva sede digital
+          </h2>
+          <div class="welcome__btn">
+            <button class="btn--white">
+              <a href=""><p>PROBARLO GRATIS</p></a>
+            </button>
+            <button class="btn--purple">
+              <a href=""><p>HABLAR CON EL EQUIPO DE VENTAS</p></a>
+            </button>
+          </div>
+        </section>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="foot__top">
+        <img src="./assets/footer/icono-slack" alt="" id="slack-logo" />
+        <ul class="foot__top--list">
+          <li>
+            <div class="foot__top--list__item">
+             <b>¿POR QUÉ SLACK?</b>
+             <b> ▷ </b>
+            </div>
+          </li>
+          <li>
+            <div class="foot__top--list__item">
+              <b>PRODUCTO</b>
+              <b> ▷ </b>
+            </div>
+          </li>
+          <li>
+            <div class="foot__top--list__item">
+              <b>PRECIOS</b>
+              <b> ▷ </b>
+            </div>
+          </li>
+          <li>
+            <div class="foot__top--list__item">
+              <b>RECURSOS</b>
+              <b> ▷ </b>
+              </div>
+          </li>
+          <li>
+            <div class="foot__top--list__item">
+             <b>EMPRESA</b>
+             <b> ▷ </b>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="foot__mid">
+        <ul class="foot__mid--list">
+          <li>
+            <div class="foot__mid--list__item">
+             <b>Estado</b>
+            </div>
+          </li>
+          <li>
+            <div class="foot__mid--list__item">
+              <b>Privacidad</b>
+            </div>
+          </li>
+          <li>
+            <div class="foot__mid--list__item">
+              <b>Términos</b>
+            </div>
+          </li>
+          <li>
+            <div class="foot__mid--list__item">
+              <b>Preferencia de cookies</b>
+              </div>
+          </li>
+          <li>
+            <div class="foot__mid--list__item">
+             <b>Contáctanos</b>
+            </div>
+          </li>
+          <li>
+            <div class="foot__mid--list__item">
+             <b>Cambiar de región ▾</b>
+            </div>
+          </li>
+        </ul>
+        <a href="">Descargar Slack</a>
+        <ul class="social-media">
+          <li><img src="./assets/footer/twitter.png" alt="" class="media-logo" /></li>
+          <li><img src="./assets/footer/facebook.png" alt="" class="media-logo" /></li>
+          <li><img src="./assets/footer/youtube.png" alt="" class="media-logo" /></li>
+          <li><img src="./assets/footer/linkdin.png" alt="" class="media-logo" /></li>
+        </ul>
+      </div>
+      <div class="foot__bot">
+        <p>
+          ©2023 Slack Technologies, LLC, es una empresa de Salesforce. Todos los
+          derechos reservados. Las distintas marcas comerciales pertenecen a sus
+          respectivos propietarios.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

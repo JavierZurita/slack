@@ -90,6 +90,14 @@ header .head h1 {
   text-align: center;
   font-weight: 700;
   font-size: 38px;
+  line-height: 47px;
+}
+header .head #p--cabecera {
+  width: 90%;
+  text-align: center;
+  font-weight: 400;
+  line-height: 23px;
+  margin: 0.5rem auto 3.5rem;
 }
 header .head p {
   width: 90%;
@@ -98,32 +106,32 @@ header .head p {
   line-height: 1.444;
   letter-spacing: -0.2px;
 }
-header .head .head__btn--email {
-  height: 57px;
+header .head .head__btn {
+  display: flex;
+  flex-direction: column;
   width: 90%;
+  row-gap: 10px;
+  margin-bottom: 30px;
 }
-header .head .head__btn--google {
+header .head .head__btn .head__btn--email {
+  height: 57px;
+}
+header .head .head__btn .head__btn--google {
   background-color: #007aff;
   height: 57px;
-  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .head .head__btn--google p {
+header .head .head__btn .head__btn--google p {
   padding-right: 20%;
 }
 header .head .head__vid {
-  max-width: 100px;
-  max-height: 100px;
+  width: 390px;
 }
-header .head #head--video {
-  justify-items: center;
-  -o-object-fit: contain;
-     object-fit: contain;
-  max-width: 180vw;
-  overflow-clip-margin: content-box;
-  overflow: clip;
+header .head .head__vid #head--video {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 header .head #logo-google {
   height: 49px;
@@ -183,17 +191,11 @@ main .main--sup .promo .promo__item .promo__item--text {
   row-gap: 15px;
   align-self: center;
 }
-main .main--sup .promo .promo__item .promo__item--text a {
-  text-decoration: none;
-  color: #1264a3;
-}
 main .main--inf {
   padding-top: 60px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
-  padding-bottom: 30px;
 }
 main .main--inf .info {
   width: 100%;
@@ -202,38 +204,13 @@ main .main--inf .info {
   justify-content: center;
   row-gap: 30px;
   text-align: center;
+  margin-bottom: 20px;
 }
 main .main--inf .info .info__btn {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
   margin-bottom: 4rem;
-}
-main .main--inf .info .info__btn .info__btn--meet {
-  height: 60px;
-  border: none;
-  background-color: #541554;
-  width: 90%;
-  align-self: center;
-}
-main .main--inf .info .info__btn .info__btn--meet p {
-  color: white;
-  font-size: 14px;
-}
-main .main--inf .info .info__btn .info__btn--talk {
-  background-color: white;
-  height: 60px;
-  color: #541554;
-  border: 1px solid #541554;
-  width: 90%;
-  align-self: center;
-}
-main .main--inf .info .info__btn .info__btn--talk p {
-  color: #541554;
-  font-size: 14px;
-}
-main .main--inf .info .info__btn a {
-  text-decoration: none;
 }
 main .main--inf .info .info__list {
   align-self: center;
@@ -302,6 +279,143 @@ main .main--inf .footnotes .footnotes__p p {
   margin-bottom: 1rem;
   color: #696969;
 }
+main .main--inf .explore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  background-color: #f4ede4;
+  padding-top: 50px;
+}
+main .main--inf .explore .explore__title {
+  width: 90%;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+main .main--inf .explore .explore__slider {
+  width: 80%;
+}
+main .main--inf .explore .explore__slider a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  height: 420px;
+}
+main .main--inf .explore .explore__slider .explore__slider--img {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 15px;
+  row-gap: 10px;
+}
+main .main--inf .explore .explore__slider .explore__slider--img h4 {
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  line-height: 30px;
+}
+main .main--inf .explore .explore__slider .explore__slider--img p {
+  color: #696969;
+}
+main .main--inf .explore .explore__slider .explore__slider--img__link {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+main .main--inf .explore .explore__slider p {
+  font-size: 14px;
+  color: black;
+}
+main .main--inf .explore .explore__slider h3 {
+  font-size: 22px;
+  line-height: 30px;
+  color: black;
+}
+main .main--inf .explore .explore__slider .blue {
+  color: #1264a3;
+}
+main .main--inf .explore .explore__dots {
+  height: 20px;
+  margin-bottom: 20px;
+}
+main .main--inf .explore .explore__dots li {
+  padding-right: 10px;
+  display: inline;
+}
+main .main--inf .welcome {
+  -webkit-clip-path: ellipse(105% 100% at center top);
+          clip-path: ellipse(105% 100% at center top);
+  padding-bottom: 5rem;
+  background-color: #541554;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+main .main--inf .welcome h2 {
+  font-size: 30px;
+  padding-top: 5rem;
+  text-align: center;
+}
+main .main--inf .welcome .welcome__btn {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+main .main--inf .welcome .welcome__btn .btn--purple {
+  height: 60px;
+  border: none;
+  background-color: #541554;
+  border: 1px solid white;
+  width: 90%;
+  align-self: center;
+  border-radius: 5%;
+}
+main .main--inf .welcome .welcome__btn .btn--purple p {
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+}
+main .main--inf .welcome .welcome__btn .btn--white {
+  background-color: white;
+  height: 60px;
+  color: #541554;
+  width: 90%;
+  align-self: center;
+  border-radius: 5%;
+}
+main .main--inf .welcome .welcome__btn .btn--white border p {
+  font-weight: bold;
+  color: #541554;
+  font-size: 14px;
+}
+main .main--inf .btn--purple {
+  height: 60px;
+  border: none;
+  background-color: #541554;
+  width: 90%;
+  align-self: center;
+}
+main .main--inf .btn--purple p {
+  color: white;
+  font-size: 14px;
+}
+main .main--inf .btn--white {
+  background-color: white;
+  height: 60px;
+  color: #541554;
+  border: 1px solid #541554;
+  width: 90%;
+  align-self: center;
+}
+main .main--inf .btn--white p {
+  color: #541554;
+  font-size: 14px;
+}
 main #target--logo {
   width: 50px;
   height: 50px;
@@ -322,6 +436,24 @@ main p {
   line-height: 26px;
   letter-spacing: normal;
 }
+main a {
+  text-decoration: none;
+  color: #1264a3;
+}
+main .dot {
+  height: 15px;
+  width: 15px;
+  background-color: rgba(128, 128, 128, 0.432);
+  border-radius: 50%;
+  display: inline-block;
+}
+main .dot--selected {
+  height: 15px;
+  width: 15px;
+  background-color: #541554;
+  border-radius: 50%;
+  display: inline-block;
+}
 
 .align--rigth {
   align-self: end;
@@ -329,4 +461,82 @@ main p {
 
 #txt29 {
   font-size: 29px;
+}
+
+.text--white {
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .foot__top {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.459);
+  padding-top: 3.5rem;
+  padding-bottom: 0;
+}
+footer .foot__top .foot__top--list {
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+footer .foot__top .foot__top--list li {
+  font-weight: bold;
+  font-size: 14px;
+}
+footer .foot__top .foot__top--list .foot__top--list__item {
+  align-items: center;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .foot__mid {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+footer .foot__mid li {
+  font-weight: bold;
+  font-size: 14px;
+}
+footer .foot__mid .foot__mid--list__item {
+  height: 50px;
+}
+footer .foot__mid a {
+  padding: 1rem 0;
+  text-decoration: none;
+  color: #0062ca;
+}
+footer .foot__mid .social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .foot__mid .social-media li {
+  display: inline-block;
+  padding: 1rem 0;
+}
+footer .foot__bot {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+footer .foot__bot p {
+  text-align: left;
+  font-size: 12px;
+  line-height: 20px;
+}
+footer #mundo::before {
+  content: url("../../assets/footer/mundo.png");
+}
+footer #slack-logo {
+  height: 54px;
+  width: 54px;
 }/*# sourceMappingURL=styles-mobile.css.map */

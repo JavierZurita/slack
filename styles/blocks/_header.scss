@@ -41,6 +41,14 @@ header{
                 text-align: center;
                 font-weight: 700;
                 font-size: 38px;
+                line-height: 47px ;
+            }
+            #p--cabecera{
+                width: 90%;
+                text-align: center;
+                font-weight: 400;
+                line-height: 23px;
+                margin: 0.5rem auto 3.5rem;
             }
             p{
                 width: 90%;
@@ -49,34 +57,35 @@ header{
                 line-height: 1.444;
                 letter-spacing: -.2px;
             }
-        
-        .head__btn--email{
-            height: 57px;
-            width: 90%;
-        }
-        .head__btn--google{
-            background-color: #007aff;
-            height: 57px;
-            width: 90%;
+        .head__btn{
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            p{
-                padding-right: 20%;
+            flex-direction: column;
+            width: 90%;
+            row-gap: 10px;
+            margin-bottom: 30px;
+            
+            .head__btn--email{
+                height: 57px;
+            }
+            .head__btn--google{
+                background-color: #007aff;
+                height: 57px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                p{
+                    padding-right: 20%;
+                }
             }
         }
+        
         .head__vid{
-            max-width: 100px;
-            max-height: 100px;
-        }
-
-        #head--video{
-            justify-items: center;
-            object-fit:contain;
-            max-width: 180vw;
-            overflow-clip-margin: content-box;
-            overflow: clip;
+            width: 390px;
+            
+            #head--video{
+                object-fit: cover;
+            }
         }
         
         #logo-google{

@@ -1,0 +1,84 @@
+footer{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .foot__top{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.459);
+        padding-top: 3.5rem;
+        padding-bottom: 0;
+        
+        .foot__top--list{
+            margin-top: 32px;
+            margin-bottom: 16px;
+            li{
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+            .foot__top--list__item{
+                align-items: center;
+                height: 40px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .foot__mid{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 2rem;
+
+        li{
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+            .foot__mid--list__item{
+                height: 50px;
+            }
+        a{
+            padding: 1rem 0;
+            text-decoration: none;
+            color: #0062ca;
+        }    
+        .social-media{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            li{
+                display: inline-block;
+                padding: 1rem 0;
+            }
+        }
+    }
+
+    .foot__bot{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        p{
+            text-align: left;
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+
+    #mundo::before{
+        content: url("../../assets/footer/mundo.png");
+    }
+    #slack-logo{
+        height: 54px;
+        width: 54px;
+    }
+
+
+}
