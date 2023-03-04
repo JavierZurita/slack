@@ -126,16 +126,16 @@ header .head .head__btn .head__btn--google {
 header .head .head__btn .head__btn--google p {
   padding-right: 20%;
 }
-header .head .head__vid {
-  width: 390px;
-}
-header .head .head__vid #head--video {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 header .head #logo-google {
   height: 49px;
   width: 49px;
+}
+header .head__vid {
+  overflow: hidden;
+}
+header .head__vid #head--video {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .text--yellow {

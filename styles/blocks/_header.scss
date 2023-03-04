@@ -63,7 +63,7 @@ header{
             width: 90%;
             row-gap: 10px;
             margin-bottom: 30px;
-            
+
             .head__btn--email{
                 height: 57px;
             }
@@ -79,20 +79,19 @@ header{
                 }
             }
         }
-        
-        .head__vid{
-            width: 390px;
-            
-            #head--video{
-                object-fit: cover;
-            }
-        }
-        
         #logo-google{
             height: 49px;
             width: 49px;
         }
+    }    
+    .head__vid{
+            overflow: hidden;
+            
+        #head--video{
+            object-fit: cover;
+        }
     }
+    
     
 }
 .text--yellow{
