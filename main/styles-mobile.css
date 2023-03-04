@@ -539,4 +539,14 @@ footer #mundo::before {
 footer #slack-logo {
   height: 54px;
   width: 54px;
+}
+
+#icon--mundo {
+  width: 15px;
+  height: 15px;
+}
+
+#icon--nube {
+  width: 20px;
+  height: 20px;
 }/*# sourceMappingURL=styles-mobile.css.map */
