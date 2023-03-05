@@ -137,6 +137,23 @@ header .head__vid #head--video {
   -o-object-fit: cover;
      object-fit: cover;
 }
+header .chat {
+  width: 75px;
+  height: 75px;
+  position: fixed;
+  bottom: 15px;
+  right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  border-radius: 25%;
+  background-color: #541554;
+}
+header .chat img {
+  width: 50px;
+  height: 50px;
+}
 
 .text--yellow {
   color: #ecb22e;
